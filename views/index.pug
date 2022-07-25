@@ -1,0 +1,26 @@
+doctype html 
+html 
+    head 
+        title 로그인
+        style 
+            include style.css
+    body
+        block content
+            div#container 
+                div.login-wrapper
+                    h3.login-title LOGIN
+                    form.login-form(action="", method="post") 
+                        div.login-input-wrapper
+                            label 아이디
+                            input.login-input(type="text", name="id" id='id')
+                            label 비밀번호
+                            input.login-input(type="password", name="password" id='pwd')
+                        div.login-button-wrapper
+                            button.login-button.login(type='submit') 로그인
+                            button.login-button(type='button') 
+                                a(href='./register') 회원가입
+        
+        script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js") 
+        script
+            include login.js
+            

@@ -1,30 +1,25 @@
-doctype html 
-html
-    head 
-        title 회원가입
-        style 
-            include style.css
-    body 
-        block content
-            div#container 
-                div.register-wrapper
-                    h3.register-header 회원가입
-                    form.register-form(action="", method="post")
-                        label 아이디
-                        input#id(type="text", name="")
-                        span.validation.id
-                        label 비밀번호
-                        input#password(type="password", name="")
-                        span.validation.password
-                        label 비밀번호 확인
-                        input#password-confirm(type="password", name="")
-                        span.validation.password-confirm
-                        label 이메일
-                        input#email(type="text", name="")
-                        span.validation.email
-                        div.register-button-wrapper
-                            button.register-submit-button(disabled='true') 회원가입
+extends layout 
 
-        script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js") 
-        script
-            include register.js       
+block title 
+    title 회원가입
+block content 
+    div.register-wrapper
+        h3.register-header 회원가입
+        form.register-form(action="", method="post")
+            label 아이디
+            input#id(type="text", name="")
+            span.validation.id
+            label 비밀번호
+            input#password(type="password", name="")
+            span.validation.password
+            label 비밀번호 확인
+            input#password-confirm(type="password", name="")
+            span.validation.password-confirm
+            label 이메일
+            input#email(type="text", name="")
+            span.validation.email
+            div.register-button-wrapper
+                button.register-submit-button(disabled='true') 회원가입
+block script 
+    include register.js 
+    

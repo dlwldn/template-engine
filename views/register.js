@@ -110,7 +110,7 @@ const checkPasswordConfirmValidation = (value) => {
     }
 }
 const checkEmailValidation = (value) => {
-    const emailReg = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+    const emailReg = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
         if(value.length === 0) {
             userFormValidation.email = 'idle'
             $emailValidation.innerHTML = '';

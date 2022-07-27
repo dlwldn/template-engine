@@ -109,3 +109,21 @@ input {
     color: red;
     margin: 3px;
 }
+
+.user-wrapper {
+    display: flex;
+}
+.user-wrapper > div {
+    margin: 30px;
+}
+.user-wrapper > div > button {
+    width: 300px;
+    height: 300px;
+    color: white;
+}
+.verify {
+    background-color: yellowgreen;
+}
+.refresh {
+    background-color: skyblue;
+}
